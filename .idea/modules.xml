@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mybatis-quickstart/mybatis-quickstart.iml" filepath="$PROJECT_DIR$/mybatis-quickstart/mybatis-quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-quickstart/spring-quickstart.iml" filepath="$PROJECT_DIR$/spring-quickstart/spring-quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/spring_annotation/spring_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mybatis_integration/spring_mybatis_integration.iml" filepath="$PROJECT_DIR$/spring_mybatis_integration/spring_mybatis_integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-exercise.iml" filepath="$PROJECT_DIR$/ssm-exercise.iml" />
+    </modules>
+  </component>
+</project>

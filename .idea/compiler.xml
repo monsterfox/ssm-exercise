@@ -6,15 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-quickstart" />
         <module name="spring_annotation" />
         <module name="spring_junit_integration" />
+        <module name="aop_quickstart" />
+        <module name="spring-quickstart" />
         <module name="mybatis-quickstart" />
         <module name="spring_mybatis_integration" />
         <module name="spring_mybatis_integratrion_annotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aop_quickstart" target="8" />
       <module name="mybatis-quickstart" target="8" />
       <module name="spring-quickstart" target="8" />
       <module name="spring_annotation" target="8" />

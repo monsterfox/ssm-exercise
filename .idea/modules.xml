@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/aop_quickstart/aop_quickstart.iml" filepath="$PROJECT_DIR$/aop_quickstart/aop_quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-quickstart/mybatis-quickstart.iml" filepath="$PROJECT_DIR$/mybatis-quickstart/mybatis-quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-quickstart/spring-quickstart.iml" filepath="$PROJECT_DIR$/spring-quickstart/spring-quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/spring_annotation/spring_annotation.iml" />

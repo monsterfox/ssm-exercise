@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="jdbc.properties" />
-
+    <!--注入自定义Bean-->
     <bean id="userDao" class="com.foxbill.dao.impl.UserDaoImpl" />
     <bean id="userService" class="com.foxbill.service.impl.UserServiceImpl">
         <property name="userDao" ref="userDao" />

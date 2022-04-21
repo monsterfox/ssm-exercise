@@ -10,6 +10,7 @@
         <module name="spring_annotation" />
         <module name="mybatis-quickstart" />
         <module name="spring_mybatis_integration" />
+        <module name="spring_mybatis_integratrion_annotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="spring-quickstart" target="8" />
       <module name="spring_annotation" target="8" />
       <module name="spring_mybatis_integration" target="8" />
+      <module name="spring_mybatis_integratrion_annotation" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

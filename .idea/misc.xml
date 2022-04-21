@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/spring_mybatis_integration/pom.xml" />
         <option value="$PROJECT_DIR$/spring_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/spring_mybatis_integratrion_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_junit_integration/pom.xml" />
       </list>
     </option>
   </component>

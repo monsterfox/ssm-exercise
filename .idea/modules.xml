@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring_junit_integration/spring_junit_integration.iml" filepath="$PROJECT_DIR$/spring_junit_integration/spring_junit_integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mybatis_integration/spring_mybatis_integration.iml" filepath="$PROJECT_DIR$/spring_mybatis_integration/spring_mybatis_integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mybatis_integratrion_annotation/spring_mybatis_integratrion_annotation.iml" filepath="$PROJECT_DIR$/spring_mybatis_integratrion_annotation/spring_mybatis_integratrion_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc_quickstart/springmvc_quickstart.iml" filepath="$PROJECT_DIR$/springmvc_quickstart/springmvc_quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm-exercise.iml" filepath="$PROJECT_DIR$/ssm-exercise.iml" />
     </modules>
   </component>

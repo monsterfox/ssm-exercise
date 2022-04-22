@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import javax.sql.DataSource;
 
 public class MyBatisConfig {
+
     @Bean
     public SqlSessionFactoryBean sqlSessionFactory(DataSource dataSource){
         SqlSessionFactoryBean ssfb = new SqlSessionFactoryBean();
@@ -15,6 +16,7 @@ public class MyBatisConfig {
         return ssfb;
     }
 
+    //配置事务管理器，mybatis使用的是jdbc事务
     @Bean
     public MapperScannerConfigurer mapperScannerConfigurer(){
         MapperScannerConfigurer msc = new MapperScannerConfigurer();

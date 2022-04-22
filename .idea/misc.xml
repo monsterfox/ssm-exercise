@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/spring_junit_integration/pom.xml" />
         <option value="$PROJECT_DIR$/aop_quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/spring-transactional/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-transactional-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/aop_xml/pom.xml" />
       </list>
     </option>
   </component>

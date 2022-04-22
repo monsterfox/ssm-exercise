@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--1.目标类-->
+    <bean id="userDao" class="com.foxbill.dao.impl.UserDaoImpl" />
+    <!--2.切面类-->
+    <bean id="myAspect" class="com.foxbill.aop.MyAdvice" />
+    <!--3.aop编程-->
+    <aop:config>
+        <!--3.1配置切面-->
+        <aop:aspect ref="myAspect">
+            <!--3.2配置切入点,通知最后增强哪些方法-->
+            <aop:pointcut id="myPointCut" expression="execution(* com.foxbill.dao.*.*(..))"/>
+            <!--3.3关联通知Advice（切面类中的方法）和切入点pointCut-->
+
+            <aop:before method="method" pointcut-ref="myPointCut" />
+            <!--此处还可以配置各种通知类型-->
+            <aop:after method="method" pointcut-ref="myPointCut" />
+
+        </aop:aspect>
+    </aop:config>
+    
+    
+    <!--启动基于注解的声明式AspectJ支持-->
+    <!--<aop:aspectj-autoproxy />-->
+</beans>

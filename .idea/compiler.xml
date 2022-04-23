@@ -7,17 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_annotation" />
-        <module name="spring_junit_integration" />
         <module name="spring-transactional" />
-        <module name="aop_quickstart" />
-        <module name="springmvc_quickstart" />
+        <module name="springmvc_request_param" />
         <module name="aop_xml" />
         <module name="spring-quickstart" />
-        <module name="springmvc_nowebxml" />
-        <module name="mybatis-quickstart" />
         <module name="spring_mybatis_integration" />
         <module name="spring_mybatis_integratrion_annotation" />
         <module name="spring-transactional-xml" />
+        <module name="spring_junit_integration" />
+        <module name="aop_quickstart" />
+        <module name="springmvc_quickstart" />
+        <module name="springmvc_nowebxml" />
+        <module name="mybatis-quickstart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +34,7 @@
       <module name="spring_mybatis_integratrion_annotation" target="8" />
       <module name="springmvc_nowebxml" target="8" />
       <module name="springmvc_quickstart" target="8" />
+      <module name="springmvc_request_param" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

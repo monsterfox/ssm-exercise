@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springmvc_nowebxml" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_quickstart" />
   </component>
   <component name="MavenProjectsManager">
@@ -18,6 +19,7 @@
         <option value="$PROJECT_DIR$/aop_xml/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_nowebxml/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc_request_param/pom.xml" />
       </list>
     </option>
   </component>

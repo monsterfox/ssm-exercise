@@ -23,5 +23,7 @@ AOP快速入门
 
 ## 12.springmvc_nowebxml
 使用java替换web.xml
+## 13.springmvc_request_param
+springmvc中的请求参数
 
 

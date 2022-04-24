@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/springmvc_nowebxml" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_quickstart" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc_request_param" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

@@ -1,6 +1,9 @@
 package com.foxbill.config;
 
+import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import javax.servlet.Filter;
 
 public class ServletContainerInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
@@ -16,5 +19,14 @@ public class ServletContainerInitConfig extends AbstractAnnotationConfigDispatch
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
+    }
+
+    //乱码处理
+
+    @Override
+    protected Filter[] getServletFilters() {
+        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+        filter.setEncoding("UTF-8");
+        return new Filter[]{filter};
     }
 }

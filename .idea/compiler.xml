@@ -15,6 +15,7 @@
         <module name="spring_mybatis_integratrion_annotation" />
         <module name="spring-transactional-xml" />
         <module name="spring_junit_integration" />
+        <module name="ssm_RESTful" />
         <module name="aop_quickstart" />
         <module name="springmvc_quickstart" />
         <module name="springmvc_nowebxml" />
@@ -35,6 +36,7 @@
       <module name="springmvc_nowebxml" target="8" />
       <module name="springmvc_quickstart" target="8" />
       <module name="springmvc_request_param" target="8" />
+      <module name="ssm_RESTful" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

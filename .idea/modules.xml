@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/springmvc_quickstart/springmvc_quickstart.iml" filepath="$PROJECT_DIR$/springmvc_quickstart/springmvc_quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc_request_param/springmvc_request_param.iml" filepath="$PROJECT_DIR$/springmvc_request_param/springmvc_request_param.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm-exercise.iml" filepath="$PROJECT_DIR$/ssm-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm_RESTful/ssm_RESTful.iml" filepath="$PROJECT_DIR$/ssm_RESTful/ssm_RESTful.iml" />
     </modules>
   </component>
 </project>

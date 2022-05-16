@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/springmvc_nowebxml" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_quickstart" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_request_param" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm_RESTful" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -21,6 +22,7 @@
         <option value="$PROJECT_DIR$/springmvc_quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_nowebxml/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_request_param/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm_RESTful/pom.xml" />
       </list>
     </option>
   </component>

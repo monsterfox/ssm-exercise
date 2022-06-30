@@ -18,9 +18,10 @@ public class MyBatisTest {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 
         SqlSession sqlSession = sqlSessionFactory.openSession();
+//        List<User> userList = sqlSession.selectList("test.findAllUser");
+
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         System.out.println(userMapper);
-//        List<User> userList = sqlSession.selectList("com.foxbill.mapper.UserMapper.findAllUser");
         List<User> userList = userMapper.findAllUser();
         System.out.println(userList);
 
@@ -32,7 +33,7 @@ public class MyBatisTest {
 
 //        userMapper.addUser(user);
 //        userMapper.uptUser(user);
-        userMapper.delUser(14);
+//        userMapper.delUser(14);
         sqlSession.commit();
 
     }

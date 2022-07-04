@@ -25,16 +25,16 @@ public class MyBatisTest {
         List<User> userList = userMapper.findAllUser();
         System.out.println(userList);
 
-        User user = new User();
-        user.setId(15);
-        user.setUsername("22");
-        user.setSex("22");
-        user.setAge(22);
+//        User user = new User();
+//        user.setId(15);
+//        user.setUsername("22");
+//        user.setSex("22");
+//        user.setAge(22);
 
 //        userMapper.addUser(user);
 //        userMapper.uptUser(user);
 //        userMapper.delUser(14);
-        sqlSession.commit();
+//        sqlSession.commit();
 
     }
 }

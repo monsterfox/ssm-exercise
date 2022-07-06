@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用Vue做前端展示</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>品牌列表</h1>
+    <table>
+        <tr>
+            <th>编号</th>
+            <th>品牌名称</th>
+            <th>企业名称</th>
+            <th>排序</th>
+            <th>当前状态</th>
+            <th>操作</th>
+        </tr>
+
+        <tr v-for="(brand,i) in brands">
+            <td>{{i + 1}}</td>
+            <td>{{brand.brandName}}</td>
+            <td>{{brand.companyName}}</td>
+            <td>{{brand.ordered}}</td>
+            <td>{{brand.status}}</td>
+            <td><a href="#">修改</a> <a href="#">删除</a></td>
+        </tr>
+    </table>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            brands: []
+        },
+        mounted() {
+            //当页面加载完成后，发送异步请求，获取数据
+            var _this = this;
+
+            //1.axios发送ajax请求
+            axios({
+                method: "get",
+                url: "http://localhost:8080/mybatis-crud/selectAllServlet"
+            }).then(function (resp) {
+                _this.brands = resp.data;
+            })
+
+            //2.jQuery发送ajax请求
+/*            $.get("http://localhost:8080/mybatis-crud/selectAllServlet", function (data, status) {
+                //alert("数据: " + data + "\n状态: " + status);
+                _this.brands = data;
+            });*/
+        }
+    })
+</script>
+</body>
+</html>

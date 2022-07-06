@@ -12,4 +12,10 @@ public interface BrandService {
      */
     List<Brand> selectAll();
     PageBean<Brand> selectByPage(int page, int pageSize);
+
+    /**
+     * 添加
+     * @param brand
+     */
+    void add(Brand brand);
 }

@@ -4,9 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.foxbill.mapper.UserMapper">
     <insert id="addUser">
-        insert into t_user values(null,#{username},#{sex},#{age})
+        insert into t_user values(null,#{username},#{sex},#{age},#{headImg})
     </insert>
     <update id="modifyUser">
+        update t_user set username = #{username},sex = #{sex},age = #{age},headImg = #{headImg} where id = #{id}
+    </update>
+    <update id="modifyUserNoImg">
         update t_user set username = #{username},sex = #{sex},age = #{age} where id = #{id}
     </update>
     <delete id="dropUser">

@@ -19,7 +19,7 @@
 <body>
 <div class="container mt-3">
     <h2 class="text-center">添加用户</h2>
-    <form action="${pageContext.request.contextPath}/doAddUser.do" method="post" enctype="multipart/form-data">
+    <form action="doAddUser.do" method="post">
     <table class="table table-bordered w-50 mx-auto">
         <tr>
             <td>用户名：</td>
@@ -34,12 +34,8 @@
             <td><input type="number" name="age" /></td>
         </tr>
         <tr>
-            <td>头像：</td>
-            <td><input type="file" name="uploadfile" multiple="multiple" /></td>
-        </tr>
-        <tr>
             <td colspan="2">
-                <input type="submit" value="上传" class="btn btn-primary" />
+                <input type="submit" value="添加" class="btn btn-primary" />
                 <input type="reset" value="取消" class="btn btn-light" />
             </td>
         </tr>

@@ -28,6 +28,7 @@
       <th>姓名</th>
       <th>性别</th>
       <th>年龄</th>
+      <th>头像</th>
       <th>操作</th>
     </tr>
     <c:forEach items="${list}" var="user">
@@ -36,6 +37,7 @@
         <td>${user.username}</td>
         <td>${user.sex}</td>
         <td>${user.age}</td>
+        <td><img src="upload/${user.headImg}" width="200" height="200"></td>
         <td><a href="toModifyUser.do?id=${user.id}" class="btn btn-info">修改</a>
 <%--          <a href="javascript:void(0)" class="btn btn-danger" onclick="showDeleteModal(this)">删除</a></td>--%>
           <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" onclick="showDeleteModal(this)">删除</a></td>
@@ -57,7 +59,7 @@
 
         <!-- 模态框内容 -->
         <div class="modal-body">
-          <input type="text" id="deleteID" />
+          <input type="hidden" id="deleteID" />
           确定删除该用户吗？
         </div>
 

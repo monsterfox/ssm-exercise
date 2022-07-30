@@ -5,6 +5,7 @@ public class User {
     private String username;
     private String sex;
     private int age;
+    private String headImg;
 
     public User() {
     }
@@ -48,6 +49,14 @@ public class User {
         this.age = age;
     }
 
+    public String getHeadImg() {
+        return headImg;
+    }
+
+    public void setHeadImg(String headImg) {
+        this.headImg = headImg;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -55,6 +64,7 @@ public class User {
                 ", username='" + username + '\'' +
                 ", sex='" + sex + '\'' +
                 ", age=" + age +
+                ", headImg='" + headImg + '\'' +
                 '}';
     }
 }

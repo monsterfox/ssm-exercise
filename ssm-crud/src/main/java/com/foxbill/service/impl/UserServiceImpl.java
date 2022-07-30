@@ -27,6 +27,11 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    public boolean modifyUserNoImg(User user) {
+        return userMapper.modifyUserNoImg(user);
+    }
+
+    @Override
     public boolean dropUser(int id) {
         return userMapper.dropUser(id);
     }

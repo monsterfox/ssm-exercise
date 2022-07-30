@@ -20,7 +20,7 @@
 <body>
 <div class="container mt-3">
     <h2 class="text-center">修改用户</h2>
-    <form action="doModifyUser.do" method="post">
+    <form action="doModifyUser.do" method="post" enctype="multipart/form-data">
     <table class="table table-bordered w-50 mx-auto">
         <input type="hidden" name="id" value="${user.id}" />
         <tr>
@@ -34,6 +34,11 @@
         <tr>
             <td>年龄：</td>
             <td><input type="number" name="age" value="${user.age}" /></td>
+        </tr>
+        <tr>
+            <td>头像：</td>
+            <td><img src="upload/${user.headImg}">
+                <input type="file" name="uploadfile" multiple="multiple" /></td>
         </tr>
         <tr>
             <td colspan="2">

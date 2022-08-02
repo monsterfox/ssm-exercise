@@ -11,6 +11,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+/**
+ *  Java API:
+ *      SqlSessionFactoryBuilder
+ *      SqlSessionFactory  相当于 连接池
+ *      SqlSession  相当于 数据库连接
+ */
 public class MyBatisTest {
     public static void main(String[] args) throws IOException {
         String resource = "mybatis-config.xml";
@@ -21,7 +27,7 @@ public class MyBatisTest {
 //        List<User> userList = sqlSession.selectList("test.findAllUser");
 
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-        System.out.println(userMapper);
+//        System.out.println(userMapper);
         List<User> userList = userMapper.findAllUser();
         System.out.println(userList);
 

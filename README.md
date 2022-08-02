@@ -12,7 +12,13 @@ mybatis快速入门
     3. 获取 SqlSession 对象，执行 SQL 语句 
     4. 释放资源 
  注意：在不使用代理开发之前，命名空间可以为test（即命名空间任意）
-    
+ 
+### Mybatis概要（官网）
+1. 配置  configuration
+2. xml映射器  mapper
+3. 动态SQL
+4. Java API
+5. 日志
 
 ## 2. spring-quickstart
 spring快速入门

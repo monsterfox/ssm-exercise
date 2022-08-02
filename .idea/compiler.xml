@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring_annotation" />
         <module name="spring-transactional" />
+        <module name="ssm-crud" />
         <module name="springmvc_request_param" />
         <module name="aop_xml" />
         <module name="spring-quickstart" />
@@ -20,23 +21,26 @@
         <module name="springmvc_quickstart" />
         <module name="springmvc_nowebxml" />
         <module name="mybatis-quickstart" />
+        <module name="mybatis-crud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="aop_quickstart" target="8" />
-      <module name="aop_xml" target="8" />
-      <module name="mybatis-quickstart" target="8" />
-      <module name="spring-quickstart" target="8" />
-      <module name="spring-transactional" target="8" />
-      <module name="spring-transactional-xml" target="8" />
-      <module name="spring_annotation" target="8" />
-      <module name="spring_junit_integration" target="8" />
-      <module name="spring_mybatis_integration" target="8" />
-      <module name="spring_mybatis_integratrion_annotation" target="8" />
-      <module name="springmvc_nowebxml" target="8" />
-      <module name="springmvc_quickstart" target="8" />
-      <module name="springmvc_request_param" target="8" />
-      <module name="ssm_RESTful" target="8" />
+      <module name="aop_quickstart" target="1.8" />
+      <module name="aop_xml" target="1.8" />
+      <module name="mybatis-crud" target="1.8" />
+      <module name="mybatis-quickstart" target="1.8" />
+      <module name="spring-quickstart" target="1.8" />
+      <module name="spring-transactional" target="1.8" />
+      <module name="spring-transactional-xml" target="1.8" />
+      <module name="spring_annotation" target="1.8" />
+      <module name="spring_junit_integration" target="1.8" />
+      <module name="spring_mybatis_integration" target="1.8" />
+      <module name="spring_mybatis_integratrion_annotation" target="1.8" />
+      <module name="springmvc_nowebxml" target="1.8" />
+      <module name="springmvc_quickstart" target="1.8" />
+      <module name="springmvc_request_param" target="1.8" />
+      <module name="ssm-crud" target="1.7" />
+      <module name="ssm_RESTful" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

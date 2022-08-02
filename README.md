@@ -20,18 +20,62 @@ mybatis快速入门
 4. Java API
 5. 日志
 
+## mybatis-crud
+基于Vue和ElementUI实现增删改查功能
+
+JSON的jar包：1.fastjson 2.jackson
+
 ## 2. spring-quickstart
 spring快速入门
+1. IoC/DI
+   1. <bean>(自定义bean、非自定义bean)
+   2. 加载properties
+   3. 组件扫描
+   4. 引入文件
+2. Aop
+3. 事务
+
 ## 3. spring_annotation
 spring注解配置
+相关注解：
+    1. @Configuration 配置类
+    2. @ComponentScan 组件扫描，注入Bean
+    3. @PropertySource 加载属性文件
+    4. @Import 导入其他配置类
+    5. @Value 把属性文件中的值，注入到配置类属性上
+    6. @Bean 把方法返回值注入到Spring容器
+
 ## 4. spring_mybatis_integration
 spring基于xml方式整合MyBatis
+
+注入：
+1. DruidDataSource
+2. SqlSessionFactoryBean
+3. MapperScannerConfigurer
+
 ## 5. spring_mybatis_integration_annotation
 spring基于注解方式整合MyBatis
+1. SpringConfig
+   1. 配置类 @Configuration
+   2. 自定义bean的注入 -  @ComponentScan("com.foxbill")
+   3. 非自定义bean(外部bean)的注入 - @Import({JdbcConfig.class,MyBatisConfig.class})
+      1. 引入属性文件 @PropertySource("classpath:jdbc.properties")
+2. MyBatisConfig
+   1. 非自定义bean(外部bean)的注入 - @Bean
+3. JdbcConfig
+   1. 非自定义bean(外部bean)的注入 - @Bean 、 @Value
+
 ## 6. spring_junit_integration
 spring整合Junit
+
+1)@RunWith：用于指定junit运行环境，是junit提供给其他框架测试环境接口扩展，为了便于使用spring的依赖注入，spring提供了org.springframework.test.context.junit4.SpringJUnit4ClassRunner作为Junit测试环境。
+2)@ContextConfiguration({"classes=Congfig.clsss",classpath:applicationContext.xml"}) 这里可以用classes来直接导入同包下写的配置类。或者导入配置文件。
+
 ## 7. aop_quickstart
 AOP快速入门
+
+@EnableAspectJAutoProxy //开启注解开发AOP功能
+
 ## 8. spring-transaction
 基于注解的事务
 ## 9. spring-transaction-xml

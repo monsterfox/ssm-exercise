@@ -23,7 +23,7 @@ public class UserController {
     public ModelAndView get(){
         ModelAndView mv = new ModelAndView();
         System.out.println("user get...");
-        mv.addObject("msg","this msg is use modelandview to transfer.");
+        mv.addObject("msg","this msg is use ModelAndView to transfer.");
 //        mv.setViewName("WEB-INF/pages/first.jsp"); //在springmvc-config.xml中不配置视图解析器时，使用这个方式指定视图名
         mv.setViewName("first"); //在springmvc-config.xml中配置视图解析器时，使用这个方式指定视图名
         return mv;

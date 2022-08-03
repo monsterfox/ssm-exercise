@@ -71,17 +71,49 @@ spring整合Junit
 1)@RunWith：用于指定junit运行环境，是junit提供给其他框架测试环境接口扩展，为了便于使用spring的依赖注入，spring提供了org.springframework.test.context.junit4.SpringJUnit4ClassRunner作为Junit测试环境。
 2)@ContextConfiguration({"classes=Congfig.clsss",classpath:applicationContext.xml"}) 这里可以用classes来直接导入同包下写的配置类。或者导入配置文件。
 
+## 10.aop_xml
+基于xml配置AOP
+
+织入：<aop:config>
+    切面<aop:aspect>
+      切入点<aop:pointcut>
+      关联通知和切入点：<aop:通知类型 method=" " pointcut-ref=""> 
+
 ## 7. aop_quickstart
-AOP快速入门
+基于注解配置AOP-AOP快速入门
 
 @EnableAspectJAutoProxy //开启注解开发AOP功能
 
 ## 8. spring-transaction
 基于注解的事务
+
+//开启注解式事务驱动
+@EnableTransactionManagement
+@Transactional
+
 ## 9. spring-transaction-xml
 基于xml的事务
-## 10.aop_xml
-基于xml配置AOP
+```xml
+    <!--Spring配置事务-->
+    <!--1.配置事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+        <!--启用事务的注解驱动-->
+        <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
+
+    <!--2.编写通知：对事务进行增强（通知），需要编写对切入点和具体执行事务细节-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED" isolation="DEFAULT" read-only="false"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--3.编写aop,让Spring自动对目标生成代理，需要使用AspectJ的表达式-->
+    <aop:config>
+        <aop:pointcut id="txPointCut" expression="execution(* com.foxbill.service.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
+    </aop:config>
+```
 ## 11.springmvc_quickstart
 
 ## 12.springmvc_nowebxml

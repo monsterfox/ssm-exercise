@@ -30,7 +30,7 @@
         <property name="defaultEncoding" value="UTF-8" />
     </bean>
     <!--配置静态资源的访问映射，此配置中的文件，将不被前端控制器拦截-->
-<!--    <mvc:resources mapping="/js/**" location="/js/"/>-->
+    <mvc:resources mapping="/static/**" location="/static/"/>
 
 
 </beans>

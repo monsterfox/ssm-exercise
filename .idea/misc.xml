@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mybatis-crud" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_nowebxml" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_quickstart" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_request_param" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm-crud" />
     <file type="web" url="file://$PROJECT_DIR$/ssm_RESTful" />
   </component>
   <component name="MavenProjectsManager">
@@ -23,6 +25,9 @@
         <option value="$PROJECT_DIR$/springmvc_nowebxml/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_request_param/pom.xml" />
         <option value="$PROJECT_DIR$/ssm_RESTful/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-crud/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-crud/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-vue-elementui-crud/pom.xml" />
       </list>
     </option>
   </component>

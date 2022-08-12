@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/aop_quickstart/aop_quickstart.iml" filepath="$PROJECT_DIR$/aop_quickstart/aop_quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/aop_xml/aop_xml.iml" filepath="$PROJECT_DIR$/aop_xml/aop_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-crud/mybatis-crud.iml" filepath="$PROJECT_DIR$/mybatis-crud/mybatis-crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-quickstart/mybatis-quickstart.iml" filepath="$PROJECT_DIR$/mybatis-quickstart/mybatis-quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-quickstart/spring-quickstart.iml" filepath="$PROJECT_DIR$/spring-quickstart/spring-quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-transactional/spring-transactional.iml" filepath="$PROJECT_DIR$/spring-transactional/spring-transactional.iml" />
@@ -12,9 +13,11 @@
       <module fileurl="file://$PROJECT_DIR$/spring_junit_integration/spring_junit_integration.iml" filepath="$PROJECT_DIR$/spring_junit_integration/spring_junit_integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mybatis_integration/spring_mybatis_integration.iml" filepath="$PROJECT_DIR$/spring_mybatis_integration/spring_mybatis_integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mybatis_integratrion_annotation/spring_mybatis_integratrion_annotation.iml" filepath="$PROJECT_DIR$/spring_mybatis_integratrion_annotation/spring_mybatis_integratrion_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-vue-elementui-crud/springboot-vue-elementui-crud.iml" filepath="$PROJECT_DIR$/springboot-vue-elementui-crud/springboot-vue-elementui-crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc_nowebxml/springmvc_nowebxml.iml" filepath="$PROJECT_DIR$/springmvc_nowebxml/springmvc_nowebxml.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc_quickstart/springmvc_quickstart.iml" filepath="$PROJECT_DIR$/springmvc_quickstart/springmvc_quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc_request_param/springmvc_request_param.iml" filepath="$PROJECT_DIR$/springmvc_request_param/springmvc_request_param.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-crud/ssm-crud.iml" filepath="$PROJECT_DIR$/ssm-crud/ssm-crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm-exercise.iml" filepath="$PROJECT_DIR$/ssm-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm_RESTful/ssm_RESTful.iml" filepath="$PROJECT_DIR$/ssm_RESTful/ssm_RESTful.iml" />
     </modules>

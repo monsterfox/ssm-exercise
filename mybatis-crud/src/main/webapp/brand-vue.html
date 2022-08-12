@@ -43,7 +43,7 @@
             //1.axios发送ajax请求
             axios({
                 method: "get",
-                url: "http://localhost:8080/mybatis-crud/selectAllServlet"
+                url: "http://localhost:8080/mybatis-crud/selectAll"
             }).then(function (resp) {
                 _this.brands = resp.data;
             })
